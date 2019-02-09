@@ -4,7 +4,6 @@ language: python
 python:
    # These jobs are only used in testing, no packaging done and are currently allowed failures
  - 3.6
- - nightly
 
 env:
  - TRAVIS_NODE_VERSION="8"
@@ -28,8 +27,6 @@ matrix:
      env:
       - DEPLOY=true
       - TRAVIS_NODE_VERSION="8"
-  allow_failures:
-   - python: nightly
 
 before_install:
  # Install Python 3.7.2
